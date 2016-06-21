@@ -91,6 +91,6 @@ private:
 	SortedLinkedList<T>* table; //the hash table, which is a dynamic array of sorted linked lists
 };
 
-#include "Dictionary.tpp"
+#include "Dictionary.cpp"
 
 #endif

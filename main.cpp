@@ -59,6 +59,7 @@ int main()
 		cout << (linkedList2.get("12")!=NULL?"Found.":"NOT found.") << endl;
 		cout << "Trying to get \"11\" in linkedList2... ";
 		cout << (linkedList2.get("11")!=NULL?"Found.":"Not found.") << endl;
+
 		cout << endl << endl;
 	} //by using this pair of brackets, a scope is created
 	//it forces the destruction of the non-dynamic objects inside (for testing purpose)
@@ -97,7 +98,6 @@ int main()
 	{
 		cout << "*** Dictionary<Word> tests ***" << endl << endl;
 		Dictionary<Word> wordDict1(4, Word::hashFunction1);
-
 		wordDict1.add("cat", new Word("cat", "meow"));
 		cout << "After adding \"cat\":" << endl;
 		wordDict1.print();
@@ -188,7 +188,7 @@ int main()
 		Inventor* result = inventorDict.lookup("Winchell");
 		cout << "Looking up for \"Winchell\"..." << endl;
 		if(result!=NULL) cout << "result: " << *result << endl;
-		else cout << "Not found in the dictionary." << endl;
+		else cout << "Not found in the dictionary." << 	endl;
 		result = inventorDict.lookup("Paul");
 		cout << "Looking up for \"Paul\"..." << endl;
 		if(result!=NULL) cout << "result: " << *result << endl;

@@ -50,7 +50,7 @@ public:
 	/*
 	 * Remove the current head from the linked list, and return that.
 	 * Return NULL if the list is empty.
-	 * NOTE: In this function, do NOT delete/deallocate the (old) head that has been popped; the caller would be responsible for deleting it after using it.
+	 * NOTE: In this function, do NOT／ delete/deallocate the (old) head that has been popped; the caller would be responsible for deleting it after using it.
 	 */
 	Node<T>* popHead();
 
@@ -75,6 +75,6 @@ private:
 	 */
 };
 
-#include "SortedLinkedList.tpp"
+#include "SortedLinkedList.cpp"
 
 #endif /* SORTEDLINKEDLIST_H_ */

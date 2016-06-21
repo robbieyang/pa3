@@ -45,6 +45,6 @@ private:
     friend ostream& operator<< (ostream& os, const SortedLinkedList<S>& list);
 };
 
-#include "Node.tpp"
+#include "Node.cpp"
 
 #endif /* NODE_H_ */
